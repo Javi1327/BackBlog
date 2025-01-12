@@ -2,6 +2,7 @@
 
 Esto es el backend de una aplicación web desarrollada como parte del trabajo integrador de la diplomatura de desarrollo web. Fue desarrollado con Node.js y Express. Proporciona las funcionalidades necesarias para la autenticación de usuarios, gestión de datos y conexión con la base de datos MongoDB.
 
+
 ---
 
 ## Tecnologías Utilizadas
@@ -15,7 +16,32 @@ Esto es el backend de una aplicación web desarrollada como parte del trabajo in
 - **dotenv**: Para la gestión de variables de entorno.
 - **CORS**: Para permitir peticiones desde el frontend.
 
+---
+
+## **Funciones Principales**
+- **Autenticación**: Proteccion con JWT.
+- **Gestion de Blogs**: Funcionalidades de **GET**, **POST**, **PUT** y **DELETE**.
+- **Validacion de Datos**: Validacion con **express-validator**.
+- **Logger**: Sistema de inicio de sesion.
+
 --- 
+
+## Estructura del Proyecto
+
+```
+backblog/
+├── src/
+│   ├── controllers/      # Lógica de negocio y manejo de peticiones
+│   ├── middleware/       # Middlewares personalizados
+│   ├── model/            # Definición de los esquemas de Mongoose
+│   ├── router/           # Definición de las rutas de la API
+│   ├── service/          # Servicios para la logica del Blog
+│   └──  utils/           # Generacion de Tokens JWT
+├── .gitignore            # Archivos y carpetas a ignorar por Git
+├── index.js              # Configuración principal de la aplicación
+├── package.json          # Dependencias y scripts del proyecto
+└── README.md             # Documentación del backend
+```
 
 ## Instrucciones de Uso
 ### Instalacion 
@@ -61,6 +87,5 @@ npm start
     Javier Puma Reyes [https://github.com/Javi1327]
     Ivan Rodriguez [https://github.com/Lynx-oss]
     Agustin Romero [https://github.com/AguusRomero]
-
 
 
